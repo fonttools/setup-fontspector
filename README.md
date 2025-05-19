@@ -3,7 +3,7 @@
 [![GitHub Super-Linter](https://github.com/fonttools/setup-fontspector/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
 ![CI](https://github.com/fonttools/setup-fontspector/actions/workflows/ci.yml/badge.svg)
 
-Use this template to install Fontspector in your Github Actions Workflow:
+Use this template to install Fontspector in your GitHub Actions Workflow:
 
 ```yaml
 - name: Install fontspector
