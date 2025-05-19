@@ -1,13 +1,13 @@
 # Setup Fontspector
 
-[![GitHub Super-Linter](https://github.com/notofonts/setup-fontspector/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
-![CI](https://github.com/notofonts/setup-fontspector/actions/workflows/ci.yml/badge.svg)
+[![GitHub Super-Linter](https://github.com/fonttools/setup-fontspector/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
+![CI](https://github.com/fonttools/setup-fontspector/actions/workflows/ci.yml/badge.svg)
 
 Use this template to install Fontspector in your Github Actions Workflow:
 
 ```yaml
 - name: Install fontspector
-  uses: notofonts/setup-fontspector@main
+  uses: fonttools/setup-fontspector@main
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -17,7 +17,7 @@ choose a specific release:
 
 ```yaml
 - name: Install fontspector
-  uses: notofonts/setup-fontspector@main
+  uses: fonttools/setup-fontspector@main
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
