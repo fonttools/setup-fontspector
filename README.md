@@ -34,7 +34,7 @@ or you can get a recent binary build artefact by requesting a "head" version:
     repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 - name: Install fontspector
-  uses: notofonts/setup-fontspector@main
+  uses: fonttools/setup-fontspector@main
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
@@ -52,7 +52,7 @@ like to build (as a space separated list)
     repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 - name: Install fontspector
-  uses: notofonts/setup-fontspector@main
+  uses: fonttools/setup-fontspector@main
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
