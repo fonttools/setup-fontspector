@@ -17,6 +17,21 @@ export async function build(version, features) {
     core.error('Cargo is not installed. Cannot build from source without Rust.')
     return
   }
+  // Also check we have protoc
+  let hasProtoc = true
+  execSync('protoc --version', (error, stdout, stderr) => {
+    if (error) {
+      core.error(`Error running Protoc: ${error.message}`)
+      hasProtoc = false
+      return
+    }
+  })
+  if (!hasProtoc) {
+    core.error(
+      'Protoc is not installed. Cannot build from source without Protobuf; use arduino/setup-protoc.'
+    )
+    return
+  }
 
   let cargoCmd = 'cargo install '
   if (features) {

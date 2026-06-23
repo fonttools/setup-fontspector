@@ -29,6 +29,10 @@ or you can get a recent binary build artefact by requesting a "head" version:
 ```yaml
 # Needed for source build
 - uses: actions-rust-lang/setup-rust-toolchain@v1
+- uses: arduino/setup-protoc@v3
+  with:
+    repo-token: ${{ secrets.GITHUB_TOKEN }}
+
 - name: Install fontspector
   uses: fonttools/setup-fontspector@main
   env:
@@ -43,6 +47,9 @@ like to build (as a space separated list)
 ```yaml
 # Needed for source build
 - uses: actions-rust-lang/setup-rust-toolchain@v1
+- uses: arduino/setup-protoc@v3
+  with:
+    repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 - name: Install fontspector
   uses: fonttools/setup-fontspector@main
